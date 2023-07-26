@@ -1,10 +1,10 @@
-package bytebank;
+package bytebankCliente;
 
-public class Conta{
-    double saldo;
+public class Conta {
+    private double saldo;
     int agencia;
     int numero;
-    String titular;
+    ContaCliente titular;
 
 
 
@@ -33,4 +33,10 @@ public class Conta{
         return false;
 
     }
+
+    public double getSaldo(){
+        return this.saldo;
+    }
+    
+
 }
